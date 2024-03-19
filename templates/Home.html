@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <title>ホーム</title>
+  </head>
+  <body>
+    <h1>課題リマインダー</h1>
+    <p><b>課題リスト</b></p>
+    <b>
+      &emsp;&emsp;
+      課題名&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      提出日&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      重要度 (0~10)
+    </b>
+    {% for i in range(count) %}
+    <ul>
+      <li>
+      {{ task_name[i] }}&emsp;&emsp;
+      {{ deadline[i] }}&emsp;&emsp;
+      {{ importance[i] }}</li>
+    </ul>
+    {% endfor %}
+
+		<br>
+  
+    <div class="px-4 py-3">
+    <button>
+      <a href="/login/">ログアウト</a>
+    </button>
+    <button>
+      <a href="/register/">登録</a>
+    </button>
+    <button>
+      <a href="/EditTask/">編集削除</a>
+    </button>
+    <button>
+      <a href="/board/">掲示板</a>
+    </button>
+    </div>
+      
+  </body>
+</html>

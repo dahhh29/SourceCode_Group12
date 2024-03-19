@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>ログイン</title>
+  </head>
+  <body>
+      <form class="px-4 py-3" action="" method="post">
+        <h1> 課題リマインダー </h1>
+        <font color="red">IDまたはパスワードが一致しません。</font><br>
+        <div class="mb-3">
+          <label for="id" class="form-label">ID</label>
+          <input type="text" class="form-control" placeholder="IDを入力してください"  required="required" name="id">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">パスワード</label>
+          <input type="password" class="form-control" placeholder="パスワードを入力してください"  required="required" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary">ログイン</button>
+        <br><br><br>
+        <button>
+          <a href="/signup/">新規登録</a>
+        </button>
+      </form>
+  </body>
+</html>

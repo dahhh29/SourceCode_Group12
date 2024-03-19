@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>課題登録画面</title>
+    </head>
+    <meta charset = "utf-8">
+    <body>
+        <header>
+            <h1 center>課題登録</h1>
+        </header>
+        <form method = "POST">
+            <p>課題名:<input type = "text" name = "task_name" placeholder = "1 ～ 20文字"></p>
+            <p>期日:<input type = "text" name = "deadline" placeholder = "YYYY/MM/DD hh:mm"></p>
+            <p>重要度:<input type = "number" name = "importance" min = "1" max = "10" placeholder = "1 ～ 10"></p>
+            <p>通知日時:<input type = "text" name = "notice_time" placeholder = "YYYY/MM/DD hh:mm"></p>
+            <p>＊期日及び通知日時の入力は全て半角で行ってください。(日付と時刻の間は半角スペース)</p>
+            <p>月、日、時、分は一桁の場合0を入力してください。例）7月9日9時5分：07/09 09:05</p>
+            <input type = "submit" value = "登録する">
+            <button>
+                <a href="/home/">キャンセル</a>
+            </button>
+        </form>
+    </body>
+</html>
